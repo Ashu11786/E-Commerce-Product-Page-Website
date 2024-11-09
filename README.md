@@ -43,28 +43,19 @@ This project is an **E-commerce Product Page** designed to showcase products in 
 
 ## Project Structure
 
-plaintext
-ecommerce-product-page/
-├── index.html         # Main product page HTML file
-├── cart.html          # Shopping cart HTML file
-├── styles/            # Folder for CSS files
-│   ├── style.css      # Main CSS file for product page
-│   └── cart.css       # CSS file for cart page
-├── scripts/           # Folder for JavaScript files
-│   ├── script.js      # JavaScript for product page interactivity
-│   └── cart.js        # JavaScript for cart functionality
-├── images/            # Folder for product images
-└── icons/             # Folder for icon images used in the project
+```graphql
+   ecommerce-product-page/
+   ├── index.html         # Main product page HTML file
+   ├── cart.html          # Shopping cart HTML file
+   ├── styles/            # Folder for CSS files
+   │   ├── style.css      # Main CSS file for product page
+   │   └── cart.css       # CSS file for cart page
+   ├── scripts/           # Folder for JavaScript files
+   │   ├── script.js      # JavaScript for product page interactivity
+   │   └── cart.js        # JavaScript for cart functionality
+   ├── images/            # Folder for product images
+   └── icons/             # Folder for icon images used in the project
 
-
-## Contributing
-   Contributions are welcome! Please feel free to submit a pull request or open an issue for improvements or suggestions.
-
-## License
-   This project is licensed under the MIT License.
-
-## Acknowledgements
-   This project was created as part of a web development learning initiative. Special thanks to the **Skill Savvy team** for project guidelines and support.
 
 
 
