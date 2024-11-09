@@ -28,3 +28,42 @@ This project is an **E-commerce Product Page** designed to showcase products in 
 1. Clone the repository:
    ```bash
    git clone https://github.com/Ashu11786/ecommerce-product-page.git
+
+2. Navigate to the project folder:
+   ```bash
+   cd ecommerce-product-page
+
+3. Open the index.html file in a web browser to view the page.
+
+## Usage
+
+1. Browse through the product images and read the product description.
+2. Add products to the cart and view the updated total.
+3. Remove products from the cart if desired.
+
+## Project Structure
+   ```graphql
+
+ecommerce-product-page/
+├── index.html         # Main product page HTML file
+├── cart.html          # Shopping cart HTML file
+├── styles/            # Folder for CSS files
+│   ├── style.css      # Main CSS file for product page
+│   └── cart.css       # CSS file for cart page
+├── scripts/           # Folder for JavaScript files
+│   ├── script.js      # JavaScript for product page interactivity
+│   └── cart.js        # JavaScript for cart functionality
+├── images/            # Folder for product images
+└── icons/             # Folder for icon images used in the project
+
+
+## Contributing
+   Contributions are welcome! Please feel free to submit a pull request or open an issue.
+
+##  License
+   This project is licensed under the MIT License.
+
+## Acknowledgements
+   This project was created as part of a web development learning initiative. Special thanks to the Skill Savvy team for project guidelines and support.
+
+   
