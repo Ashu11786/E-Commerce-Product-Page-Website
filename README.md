@@ -23,6 +23,11 @@ This project is an **E-commerce Product Page** designed to showcase products in 
 - **CSS**: Style the page for a visually appealing look.
 - **JavaScript**: Add interactivity, such as updating the cart.
 
+## Preview
+
+https://github.com/user-attachments/assets/499dce93-1b83-40d5-a2d2-9afe8b4f84e1
+
+
 ## Installation
 
 1. Clone the repository:
