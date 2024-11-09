@@ -42,8 +42,8 @@ This project is an **E-commerce Product Page** designed to showcase products in 
 3. Remove products from the cart if desired.
 
 ## Project Structure
-   ```graphql
 
+plaintext
 ecommerce-product-page/
 ├── index.html         # Main product page HTML file
 ├── cart.html          # Shopping cart HTML file
@@ -58,12 +58,14 @@ ecommerce-product-page/
 
 
 ## Contributing
-   Contributions are welcome! Please feel free to submit a pull request or open an issue.
+   Contributions are welcome! Please feel free to submit a pull request or open an issue for improvements or suggestions.
 
-##  License
+## License
    This project is licensed under the MIT License.
 
 ## Acknowledgements
-   This project was created as part of a web development learning initiative. Special thanks to the Skill Savvy team for project guidelines and support.
+   This project was created as part of a web development learning initiative. Special thanks to the **Skill Savvy team** for project guidelines and support.
+
+
 
    
