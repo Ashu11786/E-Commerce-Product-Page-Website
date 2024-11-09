@@ -41,6 +41,19 @@ This project is an **E-commerce Product Page** designed to showcase products in 
 2. Add products to the cart and view the updated total.
 3. Remove products from the cart if desired.
 
+## Contributing
+
+   Contributions are welcome! Please feel free to submit a pull request or open an issue for improvements or suggestions.
+
+## License
+
+   This project is licensed under the MIT License.
+
+## Acknowledgements
+
+   This project was created as part of a web development learning initiative. Special thanks to the **Skill Savvy team** for project guidelines and support.
+
+
 ## Project Structure
 
 ```graphql
@@ -58,5 +71,3 @@ This project is an **E-commerce Product Page** designed to showcase products in 
 
 
 
-
-   
