@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Shop beautiful bouquets and flowers for any occasion. Fresh flowers delivered to your door.">
+    <meta name="keywords" content="flowers, bouquet, e-commerce, delivery, gifts">
+    <title>E-Commerce Product Page</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="product_page">
+        <!-- Navigation bar -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="/icons/logo.jpg" alt="logo"></a>
+            </div>
+            <!-- loads the entire Variable Font -->
+            <ul class="nav-links">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Shop">Shop</a></li>
+                <li><a href="#Categories">Categories</a></li>
+            </ul>
+            <div class="nav-search">
+                <input type="text" placeholder="Search Product...">
+                <button type="button">Search</button>
+            </div>
+            <div class="navbar-cart">
+                <a href="cart.html"><img src="/icons/cart.jpg" alt="cart" class="cart-icon"><span
+                        id="cart-count">0</span></a>
+            </div>
+            <div class="navbar-toggle-menu" onclick="toggleMenu()">
+                <img src="icons/hamburger-icon.jpg" alt="menu" class="menu">
+            </div>
+        </nav>
+
+        <!-- Flower Section -->
+        <section class="hero">
+            <div class="carousel">
+                <div class="flower_image carousel-img product" data-name="Red Rose Bouquet" data-price="699.00">
+                    <img src="/flower_images/Rose.jpg" alt="rose1">
+                    <img src="/flower_images/rose2.jpg" alt="rose2">
+                    <img src="/flower_images/rose3.jpg" alt="rose3">
+                </div>
+                <!-- Navigation buttons for slider -->
+                <button class=" carousel-btn prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-btn next" onclick="nextSlide()">&#10095;</button>
+            </div>
+
+            <div class="details">
+                <h1>Red Rose Bouquet</h1>
+                <p class="price">&#8377; 699</p>
+                <p class="description">This beautiful bouquet of red roses is perfect for any special occasion. Each
+                    bouquet is hand-crafted with the freshest roses, arranged elegantly to convey love and admiration.
+                </p>
+
+                <!-- Quantity Selector -->
+                <div class="quantity-selector">
+                    <button onclick="decreaseQuantity()">-</button>
+                    <input type="number" id="quantity" value="1" min="1">
+                    <button onclick="increaseQuantity()">+</button>
+                </div>
+
+                <!-- Add to Cart Button -->
+                <button class="btn-add-cart" onclick="addToCart('Red Roses Bouquet', 2000)">Add to Cart</button>
+
+                <!-- Buy Now Button -->
+                <button class="btn-shop">Buy Now</button>
+            </div>
+        </section>
+
+        <!-- Related Flowers Section -->
+        <section class="relateds">
+            <h2>Similar Products</h2>
+            <div class="related-product">
+                <div class="related_flower_card product" data-name="Lovely Lotus" data-price="599.00">
+                    <img src="/flower_images/lotus.jpg" alt="lotus">
+                    <h3>Lovely Lotus</h3>
+                    <p class="related_price">&#8377; 599</p>
+                    <button class="btn-add-cart" onclick="addToCart('Lovely Lotus', 1500)">Add to Cart</button>
+                </div>
+
+                <div class="related_flower_card product" data-name="Lavish Lily" data-price="489.00">
+                    <img src="/flower_images/lily.jpg" alt="lily">
+                    <h3>Lavish Lily</h3>
+                    <p class="related_price">&#8377; 489</p>
+                    <button class="btn-add-cart" onclick="addToCart('Lavish Lily', 1200)">Add to Cart</button>
+                </div>
+
+                <div class="related_flower_card product" data-name="Twinkling Tulip" data-price="499.00">
+                    <img src="/flower_images/tulip.jpg" alt="Tulip">
+                    <h3>Twinkling Tulip</h3>
+                    <p class="related_price">&#8377; 499</p>
+                    <button class="btn-add-cart" onclick="addToCart('Twinkling Tulip', 1600)">Add to Cart</button>
+                </div>
+
+                <div class="related_flower_card product" data-name="Charming Chrysanthemum" data-price="459.00">
+                    <img src="/flower_images/chrysanthemum.jpg" alt="chrysanthemum">
+                    <h3>Charming Chrysanthemum</h3>
+                    <p class="related_price">&#8377; 459</p>
+                    <button class="btn-add-cart" onclick="addToCart('Charming Chrysanthemum', 1800)">Add to
+                        Cart</button>
+                </div>
+
+                <div class="related_flower_card product" data-name="Blue Orchids" data-price="799.00">
+                    <img src="/flower_images/orchids.jpg" alt="orchids">
+                    <h3>Blue Orchids</h3>
+                    <p class="related_price">&#8377; 799</p>
+                    <button class="btn-add-cart" onclick="addToCart('Blue Orchids',2200)">Add to Cart</button>
+                </div>
+
+                <div class="related_flower_card product" data-name="Stunning Sunflower" data-price="565.00">
+                    <img src="/flower_images/sunflower.jpg" alt="sunflower">
+                    <h3>Stunning Sunflower</h3>
+                    <p class="related_price">&#8377; 565</p>
+                    <button class="btn-add-cart" onclick="addToCart('Stunning Sunflower',1100)">Add to Cart</button>
+                </div>
+
+                <div class="related_flower_card product" data-name="Hot Pink Hibiscus" data-price="399.00">
+                    <img src="/flower_images/hibiscus.jpg" alt="hibiscus">
+                    <h3>Hot Pink Hibiscus</h3>
+                    <p class="related_price">&#8377; 399</p>
+                    <button class="btn-add-cart" onclick="addToCart('Hot Pink Hibiscus',2100)">Add to Cart</button>
+                </div>
+
+                <div class="related_flower_card product" data-name="Gorgeous Gerbera" data-price="259.00">
+                    <img src="/flower_images/gerbera.jpg" alt="gerbera">
+                    <h3>Gorgeous Gerbera</h3>
+                    <p class="related_price">&#8377; 259</p>
+                    <button class="btn-add-cart" onclick="addToCart('Gorgeous Gerbera',2500)">Add to Cart</button>
+                </div>
+
+                <div class="related_flower_card product" data-name="Light Lavender" data-price="685.00">
+                    <img src="/flower_images/levender.jpg" alt="levender">
+                    <h3>Light Lavender</h3>
+                    <p class="related_price">&#8377; 685</p>
+                    <button class="btn-add-cart" onclick="addToCart('Light Lavender',2300)">Add to Cart</button>
+                </div>
+
+                <div class="related_flower_card product" data-name="Black Rose" data-price="799.00">
+                    <img src="/flower_images/black rose.jpg" alt="black_rose">
+                    <h3>Black Rose</h3>
+                    <p class="related_price">&#8377; 799</p>
+                    <button class="btn-add-cart" onclick="addToCart('Black Rose',2600)">Add to Cart</button>
+                </div>
+
+                <div class="related_flower_card product" data-name="Chamoline Flower Bouquet">
+                    <img src="/flower_images/chamoline.jpg" alt="chamoline">
+                    <h3>Chamoline Flower Bouquet</h3>
+                    <p class="related_price">&#8377; 850</p>
+                    <button class="btn-add-cart" onclick="addToCart('Chamoline Flower Bouquet',1900)">Add to
+                        Cart</button>
+                </div>
+
+                <div class="related_flower_card product" data-name="Dahlia Bouquet" data-price="466.00">
+                    <img src="/flower_images/dahlia.jpg" alt="dahlia">
+                    <h3>Dahlia Bouquet</h3>
+                    <p class="related_price">&#8377; 466</p>
+                    <button class="btn-add-cart" onclick="addToCart('Dahlia Bouquet',2300)">Add to Cart</button>
+                </div>
+
+                <div class="related_flower_card product" data-name="Dahlia Bouquet" data-price="466.00">
+                    <img src="/flower_images/pink calla lilies.jpg" alt="dahlia">
+                    <h3>Pink Calla Lilies Bouquet</h3>
+                    <p class="related_price">&#8377; 666</p>
+                    <button class="btn-add-cart" onclick="addToCart('Pink Calla Lilies Bouquet',2300)">Add to Cart</button>
+                </div>
+
+                <div class="related_flower_card product" data-name="Dahlia Bouquet" data-price="466.00">
+                    <img src="/flower_images/plumeria.jpg" alt="dahlia">
+                    <h3>Plumeria Bouquet</h3>
+                    <p class="related_price">&#8377; 486</p>
+                    <button class="btn-add-cart" onclick="addToCart('Plumeria Bouquet',2300)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Review Section -->
+        <section class="review-section">
+            <h2 class="customer-review">Customer Reviews</h2>
+            <div class="reviews">
+                <div class="review">
+                    <p><strong>Alfi Qadri</strong></p>
+                    <p class="rating_review">*****</p>
+                    <p>"Beautiful selection! The flowers are fresh and vibrant, with rich colors and perfect
+                        arrangements. Each bouquet feels thoughtfully crafted, ideal for any occasion. The site is easy
+                        to navigate, and ordering was a breeze. Delivery was prompt, and the flowers arrived in perfect
+                        condition. Highly recommended for anyone looking to send a thoughtful gift or brighten their own
+                        space!"</p>
+                </div>
+
+                <div class="review">
+                    <p><strong>Ashu Aamaan</strong></p>
+                    <p class="rating_review">****</p>
+                    <p>"Very satisfied, Highly recommend it. The flowers were fresh and beautiful! I will definitely
+                        order again"</p>
+                </div>
+
+                <div class="review">
+                    <p><strong>Abbas Qadri</strong></p>
+                    <p class="rating_review">***</p>
+                    <p>"Very satisfied, although shipping was delayed. Great service, but the delivery was a bit late"
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+
+                <!-- About Us Section -->
+                <div class="about">
+                    <h3>About Us</h3>
+                    <p>We deliver fresh and beautiful flowers right to your door. Our mission is to brighten your day
+                        with flowers for any occasion.</p>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/shop">Shop</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us Section -->
+                <div class="contact">
+                    <h3>Contact Us</h3>
+                    <p>123 Flower Street, Blossom City, FL 54321</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: <a href="mailto:info@flowerwebsite.com">flower@website.com</a></p>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><img src="/icons/twitter.png" alt="Twitter"></a>
+                        <a href="#"><img src="/icons/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="/icons/instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="/icons/linkedin.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="/icons/pinterest.png" alt="Pinterest"></a>
+                    </div>
+                </div>
+
+                <!-- Newsletter Section -->
+                <div class="newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <form action="#" method="post">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
